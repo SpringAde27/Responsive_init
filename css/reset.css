@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before, *:after { 
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+html { 
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    line-height: 1;       
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img, 
+ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, 
+ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+figcaption, figure, footer, header, hgroup, menu, nav, section, 
+summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, 
+main, menu, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none; 
+    height: 0;
+}
+
+mark { 
+    background: #ff0;
+    color: #000; 
+}
+
+small {
+    font-size: 80%;
+}
+
+sub, sup { 
+    font-size: 75%; 
+    line-height: 0; 
+    position: relative; 
+    vertical-align: baseline; 
+}
+
+sup { top: -0.5rem; }
+sub { bottom: -0.25rem; }
+
+svg:not(:root) { 
+    overflow: hidden;
+}
+
+ul, ul>li, 
+ol, ol>li {
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: #000;
+}
+
+a:focus,
+a:active,
+a:visited,
+a:hover { outline: 0; border: 0; }
+
+img {
+    border: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    height: 2px;
+    display: block;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea { resize: none; }
+
+button, select, optgroup, input, textarea { 
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: 'Noto Sans KR', '맑은 고딕', '돋움', sans-serif, serif; /* 폰트 적용 */
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  form element reset
+/*-----------------------------------------------------------------------------------*/
+
+:focus {
+    outline: 0;
+    border: 0;
+}
+
+/* button 초기화 */
+button,
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] { 
+    -webkit-appearance: button;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+}
+
+/* input 기본 스타일 초기화 */
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear { display: none; }
+
+/* input number 화살표 제거 */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Firefox - input number 에서 화살표 제거_input number의 외형을 텍스트필드로 변경 */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Select box 스타일 초기화 : Mac은 Windows와 다르게 select box의 경우 스타일을 초기화 하지 않으면 원하는 CSS 를 입힐 수 없다. */ 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* IE 에서 Select box 화살표 제거 */ 
+select::-ms-expand { display: none; }

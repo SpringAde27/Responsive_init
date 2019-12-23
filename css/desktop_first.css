@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* 데스크탑 퍼스트 CSS
+@media all and (max-width: 1920px)	*/
+
+
+/* PC용 CSS */
+@media all and (max-width: 1024px) {
+}
+
+/* 태블릿용 CSS */
+@media all and (max-width: 768px) {
+}
+
+/* 모바일용 CSS */
+@media all and (max-width: 320px) {
+}

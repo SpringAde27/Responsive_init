@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+@media all and (min-width: 1920px) {
+	.test { background: red; }
+}
+
+@media all and (min-width: 1260px) and (max-width: 1920px) {
+	.test { background: orange; }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1259px) {
+	.test { background: yellow; }
+}
+
+@media all and (min-width: 992px) and (max-width: 1024px) {
+	.test { background: green; }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+	.test { background: blue; }
+}
+
+@media all and (max-width: 767px) {
+	.test { background: aqua; }
+}
+
+@media all and (max-width: 600px) {
+	.test { background: purple; }
+}
+
+@media all and (max-width: 480px) {
+	.test { background: black; }
+}
+
+@media all and (max-width: 320px) {
+	.test { background: olive; }
+}
